@@ -1,12 +1,16 @@
 [submodule "bundle/repeat"]
 	path = bundle/repeat
 	url = http://github.com/tpope/vim-repeat.git
+  ignore = dirty
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = http://github.com/tpope/vim-surround.git
+  ignore = dirty
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = http://github.com/scrooloose/nerdtree
+  ignore = dirty
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = http://github.com/msanders/snipmate.vim
+  ignore = dirty
