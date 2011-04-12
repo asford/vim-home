@@ -17,3 +17,4 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = http://github.com/wincent/Command-T
+  ignore = dirty
