@@ -5,3 +5,7 @@ ln -s ~+/gvimrc ~/.gvimrc
 
 # Create swap directory
 mkdir ~/.vimswap
+
+# Init git submodules
+git submodule init
+git submodule update

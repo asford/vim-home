@@ -14,3 +14,6 @@
 	path = bundle/snipmate
 	url = http://github.com/msanders/snipmate.vim
   ignore = dirty
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = http://github.com/wincent/Command-T
