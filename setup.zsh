@@ -1,5 +1,5 @@
 # Setup symlinks to vim directory and vim configuration files
-ln -s ~+ ~
+ln -s ~+ ~/.vim
 ln -s ~+/vimrc ~/.vimrc
 ln -s ~+/gvimrc ~/.gvimrc
 

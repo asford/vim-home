@@ -5,3 +5,4 @@ snipmate https://github.com/msanders/snipmate.vim
 dirdiff http://www.vim.org/scripts/script.php?script_id=102
 pathogen http://github.com/tpope/vim-pathogen
 commandT https://github.com/wincent/Command-T
+pandoc http://github.com/vim-pandoc/vim-pandoc.git

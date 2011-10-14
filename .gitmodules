@@ -18,3 +18,6 @@
 	path = bundle/command-t
 	url = http://github.com/wincent/Command-T
   ignore = dirty
+[submodule "bundle/pandoc"]
+	path = bundle/pandoc
+	url = http://github.com/vim-pandoc/vim-pandoc.git

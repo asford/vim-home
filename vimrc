@@ -27,6 +27,10 @@ set display+=lastline "Display partial last lines
 set visualbell
 set shm+=I "No intro
 
+" Print options
+set printheader=%f\ (%N)%=Alex\ Ford\ <a.sewall.ford@gmail.com>"
+set printoptions=number:y,left:5pc,right:5pc
+
 " Color options
 colorscheme wombat
 
@@ -56,7 +60,7 @@ let g:netrw_browse_split=3
 " enable extended matching
 runtime macros/matchit.vim
 " NERDTree
-map <Leader>t :NERDTreeToggle<CR>
+map <Leader>n :NERDTreeToggle<CR>
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeChDirMode=2
