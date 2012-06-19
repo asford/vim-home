@@ -21,3 +21,18 @@
 [submodule "bundle/pandoc"]
 	path = bundle/pandoc
 	url = http://github.com/vim-pandoc/vim-pandoc.git
+[submodule "bundle/pylint"]
+	path = bundle/pylint
+	url = git://github.com/vim-scripts/pylint.vim.git
+[submodule "bundle/fugative"]
+	path = bundle/fugative
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = git://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/localvimrc"]
+	path = bundle/localvimrc
+	url = git://github.com/embear/vim-localvimrc.git
+[submodule "bundle/align"]
+  path = bundle/align
+  url = git://github.com/vim-scripts/Align.git
