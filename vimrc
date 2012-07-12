@@ -32,13 +32,14 @@ set printheader=%f\ (%N)%=Alex\ Ford\ <a.sewall.ford@gmail.com>"
 set printoptions=number:y,left:5pc,right:5pc
 
 " Color options
+set t_Co=256
 colorscheme wombat
 
 " Spacing options
 set shiftwidth=2
 set tabstop=2
 set expandtab
-set smartindent
+set cindent
 set autoindent
 
 " Search options
@@ -47,8 +48,14 @@ set smartcase
 set incsearch
 set hlsearch
 
+" Substitute options
+set gdefault
+
 " Mapping options
 let mapleader = ","
+
+" Move options
+set mps+=<:>
 
 " Diff options
 set diffopt+=iwhite
@@ -64,3 +71,17 @@ map <Leader>n :NERDTreeToggle<CR>
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeChDirMode=2
+
+" Taglist
+map <Leader>c :TlistToggle<CR>
+let Tlist_Enable_Fold_Column = 0
+
+" Localvimrc
+let g:localvimrc_sandbox = 0
+let g:localvimrc_whitelist="workspace/.*/.lvimrc"
+
+" Command-T
+let g:CommandTMaxFiles=30000
+
+" Alignment plugins
+if !hasmapto('<Plug>AM_tsq')	|map <unique> <Leader>as <Plug>AM_tsq|endif

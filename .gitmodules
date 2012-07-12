@@ -34,5 +34,5 @@
 	path = bundle/localvimrc
 	url = git://github.com/embear/vim-localvimrc.git
 [submodule "bundle/align"]
-  path = bundle/align
-  url = git://github.com/vim-scripts/Align.git
+	path = bundle/align
+	url = git://github.com/vim-scripts/Align.git
