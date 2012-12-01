@@ -20,6 +20,7 @@ set number
 set showmode
 set showcmd
 set laststatus=2 "Always show status line
+set statusline=%<%f\ %h%m%r%=%.45{asynccommand#statusline()}\ %-14.(%l,%c%V%)\ %P
 
 set linebreak "Smart line breaks
 set display+=lastline "Display partial last lines

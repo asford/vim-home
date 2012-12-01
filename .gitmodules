@@ -38,4 +38,4 @@
 	url = git://github.com/vim-scripts/Align.git
 [submodule "bundle/AsyncCommand"]
 	path = bundle/AsyncCommand
-	url = git://github.com/pydave/AsyncCommand.git
+	url = git://github.com/asford/AsyncCommand.git
