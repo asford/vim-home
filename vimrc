@@ -72,17 +72,42 @@ map <Leader>n :NERDTreeToggle<CR>
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeChDirMode=2
+let NERDTreeIgnore = ['\.pyc$']
 
 " Taglist
 map <Leader>c :TlistToggle<CR>
 let Tlist_Enable_Fold_Column = 0
 
+map <Leader>e :botright cwindow<CR>
+
 " Localvimrc
 let g:localvimrc_sandbox = 0
-let g:localvimrc_whitelist="workspace/.*/.lvimrc"
+let g:localvimrc_whitelist='\(/Volumes/fordas/rosetta.*/.lvimrc\)\|\(workspace/.*/.lvimrc\)'
 
 " Command-T
 let g:CommandTMaxFiles=30000
 
 " Alignment plugins
 if !hasmapto('<Plug>AM_tsq')	|map <unique> <Leader>as <Plug>AM_tsq|endif
+
+" Surround mappings
+let g:surround_indent = 1
+imap ( <Plug>Isurround)
+imap { <Plug>Isurround}
+imap [ <Plug>Isurround]
+
+imap (<Space> <Plug>Isurround(
+imap {<Space> <Plug>Isurround{
+imap [<Space> <Plug>Isurround{
+
+imap (<CR> <Plug>ISurround(
+imap {<CR> <Plug>ISurround{
+imap [<CR> <Plug>ISurround[
+
+inoremap (<BS> (
+inoremap {<BS> {
+inoremap [<BS> [
+
+inoremap () ()
+inoremap {} {}
+inoremap [] []
