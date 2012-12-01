@@ -36,3 +36,6 @@
 [submodule "bundle/align"]
 	path = bundle/align
 	url = git://github.com/vim-scripts/Align.git
+[submodule "bundle/AsyncCommand"]
+	path = bundle/AsyncCommand
+	url = git://github.com/pydave/AsyncCommand.git
