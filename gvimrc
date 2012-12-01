@@ -1,8 +1,8 @@
 " Fixes bug with color display in macvim
 command! -nargs=* Ipy :!ipython -colors NoColor
 
-set columns=999
-set lines=999
+"set columns=999
+"set lines=999
 
 set guioptions-=r
 set guioptions-=L

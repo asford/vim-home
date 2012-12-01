@@ -66,7 +66,7 @@ hi Number       guifg=#e5786d gui=none    ctermfg=203 cterm=none
 hi Special      guifg=#e7f6da gui=none    ctermfg=7   cterm=none
 
 " Diff colors
-hi DiffAdd      guibg=#cae682 guifg=#000000 ctermfg=192 cterm=none
-hi DiffText     guibg=#8ac6f2 guifg=#000000 ctermfg=105 cterm=none
-hi DiffChange   guibg=Grey    guifg=#000000 
-hi DiffDelete   guibg=#e5786d guifg=#000000 ctermfg=203 cterm=none
+hi DiffAdd      guibg=#cae682 guifg=black ctermfg=black ctermbg=192 cterm=none
+hi DiffText     guibg=#8ac6f2 guifg=black ctermfg=black ctermbg=105 cterm=none
+hi DiffChange   guibg=Grey    guifg=black ctermfg=black ctermbg=Grey
+hi DiffDelete   guibg=#e5786d guifg=black ctermfg=black ctermbg=203 cterm=none
