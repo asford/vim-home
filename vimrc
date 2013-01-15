@@ -77,12 +77,13 @@ let NERDTreeIgnore = ['\.pyc$']
 " Taglist
 map <Leader>c :TlistToggle<CR>
 let Tlist_Enable_Fold_Column = 0
+let Tlist_Show_One_File = 1
 
 map <Leader>e :botright cwindow<CR>
 
 " Localvimrc
 let g:localvimrc_sandbox = 0
-let g:localvimrc_whitelist='\(/Volumes/fordas/rosetta.*/.lvimrc\)\|\(workspace/.*/.lvimrc\)'
+let g:localvimrc_whitelist='\(/Volumes/fordas/rosetta.*/.lvimrc\)\|\(workspace/.*/.lvimrc\)\|\(\(/work\)\|\(gpfs.*WORK\)/fordas/rosetta.*/.*/.lvimrc\)'
 
 " Command-T
 let g:CommandTMaxFiles=30000
