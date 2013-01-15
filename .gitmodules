@@ -35,10 +35,13 @@
 	url = git://github.com/embear/vim-localvimrc.git
 [submodule "bundle/align"]
 	path = bundle/align
-	url = git://github.com/vim-scripts/Align.git
+	url = git://github.com/asford/Align.git
 [submodule "bundle/AsyncCommand"]
 	path = bundle/AsyncCommand
 	url = git://github.com/asford/AsyncCommand.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git://github.com/scrooloose/syntastic.git
