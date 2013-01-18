@@ -1,8 +1,14 @@
 set nocompatible
 
 " Setup pathogen bundles
+if !has('clientserver')
+  call add(g:pathogen_disabled, 'AsyncCommand')
+endif
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+
+
 
 " Language options
 syntax on
