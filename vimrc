@@ -80,10 +80,9 @@ let NERDTreeDirArrows=1
 let NERDTreeChDirMode=2
 let NERDTreeIgnore = ['\.pyc$']
 
-" Taglist
-map <Leader>c :TlistToggle<CR>
-let Tlist_Enable_Fold_Column = 0
-let Tlist_Show_One_File = 1
+" Tagbar
+nnoremap <silent> <Leader>o :TagbarToggle<CR>
+let g:tagbar_left=1
 
 map <Leader>e :botright cwindow<CR>
 
