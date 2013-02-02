@@ -122,6 +122,7 @@ inoremap [] []
 let g:syntastic_mode_map = { 'mode': 'passive', "active_filetypes": ["python"], "passive_filetypes": [] }
 let g:syntastic_enable_signs=0
 let g:syntastic_use_quickfix_list=1
+let g:syntastic_python_checker = 'pylint'
 
 " Mark display settings
 let g:SignatureSignTextHL = "SignMark"
