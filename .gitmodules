@@ -51,3 +51,6 @@
 [submodule "bundle/vim-signature"]
 	path = bundle/vim-signature
 	url = git://github.com/kshenoy/vim-signature.git
+[submodule "bundle/tagselect"]
+	path = bundle/tagselect
+	url = git://github.com/asford/tagselect.git
