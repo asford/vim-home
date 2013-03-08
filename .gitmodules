@@ -32,7 +32,7 @@
   ignore = untracked
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
-	url = https://github.com/majutsushi/tagbar
+	url = git://github.com/majutsushi/tagbar
   ignore = untracked
 [submodule "bundle/localvimrc"]
 	path = bundle/localvimrc
