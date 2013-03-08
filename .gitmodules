@@ -1,56 +1,68 @@
 [submodule "bundle/repeat"]
 	path = bundle/repeat
 	url = http://github.com/tpope/vim-repeat.git
-  ignore = dirty
+  ignore = untracked
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = http://github.com/tpope/vim-surround.git
-  ignore = dirty
+  ignore = untracked
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = http://github.com/scrooloose/nerdtree
-  ignore = dirty
+  ignore = untracked
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = http://github.com/msanders/snipmate.vim
-  ignore = dirty
+  ignore = untracked
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = http://github.com/wincent/Command-T
-  ignore = dirty
+  ignore = untracked
 [submodule "bundle/pandoc"]
 	path = bundle/pandoc
 	url = http://github.com/vim-pandoc/vim-pandoc.git
+  ignore = untracked
 [submodule "bundle/pylint"]
 	path = bundle/pylint
 	url = git://github.com/vim-scripts/pylint.vim.git
+  ignore = untracked
 [submodule "bundle/fugative"]
 	path = bundle/fugative
 	url = git://github.com/tpope/vim-fugitive.git
+  ignore = untracked
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar
+  ignore = untracked
 [submodule "bundle/localvimrc"]
 	path = bundle/localvimrc
 	url = git://github.com/embear/vim-localvimrc.git
+  ignore = untracked
 [submodule "bundle/align"]
 	path = bundle/align
 	url = git://github.com/asford/Align.git
+  ignore = untracked
 [submodule "bundle/AsyncCommand"]
 	path = bundle/AsyncCommand
 	url = git://github.com/asford/AsyncCommand.git
+  ignore = untracked
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
+  ignore = untracked
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+  ignore = untracked
 [submodule "bundle/vim-pathogen"]
 	path = bundle/vim-pathogen
 	url = git://github.com/tpope/vim-pathogen.git
+  ignore = untracked
 [submodule "bundle/vim-signature"]
 	path = bundle/vim-signature
 	url = git://github.com/kshenoy/vim-signature.git
+  ignore = untracked
 [submodule "bundle/tagselect"]
 	path = bundle/tagselect
 	url = git://github.com/asford/tagselect.git
+  ignore = untracked
