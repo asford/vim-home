@@ -66,3 +66,6 @@
 	path = bundle/tagselect
 	url = git://github.com/asford/tagselect.git
   ignore = untracked
+[submodule "bundle/vim-eunuch"]
+	path = bundle/vim-eunuch
+	url = git://github.com/tpope/vim-eunuch.git
