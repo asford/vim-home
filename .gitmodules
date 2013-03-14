@@ -69,6 +69,11 @@
 [submodule "bundle/vim-eunuch"]
 	path = bundle/vim-eunuch
 	url = git://github.com/tpope/vim-eunuch.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = git://github.com/sjl/gundo.vim.git
+  ignore = untracked
 [submodule "bundle/scratch"]
 	path = bundle/scratch
 	url = git@github.com:asford/scratch.vim.git
+  ignore = untracked
