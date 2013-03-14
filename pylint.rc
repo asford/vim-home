@@ -35,7 +35,8 @@ load-plugins=
 # it should appear only once).
 
 #F0401 errors on failed imports.
-disable=C,R,F0401
+#I0011 errors on inline pylint control comments
+disable=C,R,F0401,I0011
 
 
 [REPORTS]
@@ -239,7 +240,8 @@ max-public-methods=20
 [IMPORTS]
 
 # Deprecated modules which should not be used, separated by a comma
-deprecated-modules=regsub,string,TERMIOS,Bastion,rexec
+# Removed string
+deprecated-modules=regsub,TERMIOS,Bastion,rexec
 
 # Create a graph of every (i.e. internal and external) dependencies in the
 # given file (report RP0402 must not be disabled)

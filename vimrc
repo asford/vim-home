@@ -14,9 +14,6 @@ call pathogen#helptags()
 syntax on
 filetype plugin indent on
 
-" Set default tex type
-let g:tex_flavor = "latex"
-
 " Set swapfile target directory
 set dir=~/.vimswap
 
@@ -30,6 +27,7 @@ set statusline=%<%f\ %h%m%r%=%.45{asynccommand#statusline()}\ %-14.(%l,%c%V%)\ %
 
 set linebreak "Smart line breaks
 set display+=lastline "Display partial last lines
+set backspace=start,eol,indent
 
 set visualbell
 set shm+=I "No intro
@@ -124,8 +122,11 @@ let g:syntastic_enable_signs=0
 " let g:syntastic_use_quickfix_list=1
 let g:syntastic_enable_highlighting = 1
 let g:syntastic_enable_balloons = 1
-let g:syntastic_python_checker = 'pylint'
-let g:syntastic_python_checker_args = '--rcfile=$HOME/.vim/pylint.rc'
+let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_pylint_args = ' -f parseable -r n -i y --rcfile=~/.vim/pylint.rc '
 
 " Mark display settings
 let g:SignatureSignTextHL = "SignMark"
+
+" Set default tex type
+let g:tex_flavor = "latex"
