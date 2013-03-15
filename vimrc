@@ -23,7 +23,7 @@ set number
 set showmode
 set showcmd
 set laststatus=2 "Always show status line
-set statusline=%<%f\ %h%m%r%=%.45{asynccommand#statusline()}\ %-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ %h%m%r%=%.45{asynccommand#statusline()}\ %{fugitive#statusline()}\ %-14.(%l,%c%V%)\ %P
 
 set linebreak "Smart line breaks
 set display+=lastline "Display partial last lines
@@ -130,3 +130,8 @@ let g:SignatureSignTextHL = "SignMark"
 
 " Set default tex type
 let g:tex_flavor = "latex"
+
+" Vim fugitive
+" Auto unload fugitive buffers when hidden
+autocmd BufReadPost fugitive://* set bufhidden=delete
+
