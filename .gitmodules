@@ -44,7 +44,7 @@
   ignore = untracked
 [submodule "bundle/AsyncCommand"]
 	path = bundle/AsyncCommand
-	url = git://github.com/asford/AsyncCommand.git
+	url = git://github.com/pydave/AsyncCommand.git
   ignore = untracked
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
@@ -77,3 +77,9 @@
 	path = bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
   ignore = untracked
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = git://github.com/tpope/vim-markdown.git
+[submodule "bundle/IndentTab"]
+	path = bundle/IndentTab
+	url = https://github.com/vim-scripts/IndentTab

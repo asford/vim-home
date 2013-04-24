@@ -1,20 +1,10 @@
-" hard wrapping at 79 chars (like in gq default)
-if &textwidth == 0
-  setlocal textwidth=79
-endif
-" t: wrap on &textwidth
 " n: keep inner indent for list items.
-setlocal formatoptions=tn
-" will detect numbers, letters, *, +, and - as list headers, according to
-" pandoc syntax.
+setlocal formatoptions=n
+" will detect numbers, letters, *, +, and - as list headers
 " TODO: add support for roman numerals
 setlocal formatlistpat=^\\s*\\([*+-]\\\|\\((*\\d\\+[.)]\\+\\)\\\|\\((*\\l[.)]\\+\\)\\)\\s\\+
 
-" a: auto-format
-" w: lines with trailing spaces mark continuing
-" paragraphs, and lines ending on non-spaces end paragraphs.
-" we add `w` as a workaround to `a` joining compact lists.
-setlocal formatoptions+=aw
+set spell
 
 " soft wrapping
 setlocal formatoptions=1
