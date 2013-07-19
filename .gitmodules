@@ -14,10 +14,6 @@
 	path = bundle/snipmate
 	url = http://github.com/msanders/snipmate.vim
   ignore = untracked
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = http://github.com/wincent/Command-T
-  ignore = untracked
 [submodule "bundle/pandoc"]
 	path = bundle/pandoc
 	url = http://github.com/vim-pandoc/vim-pandoc.git
@@ -83,3 +79,7 @@
 [submodule "bundle/IndentTab"]
 	path = bundle/IndentTab
 	url = https://github.com/vim-scripts/IndentTab
+[submodule "bundle/ctrlp.vim"]
+	path = bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+  ignore = untracked

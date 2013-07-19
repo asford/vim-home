@@ -136,8 +136,10 @@ nnoremap <silent> <Leader>e :botright cwindow<CR>
 let g:localvimrc_sandbox = 0
 let g:localvimrc_whitelist='\(/Volumes/fordas/rosetta.*/.lvimrc\)\|\(workspace/.*/.lvimrc\)\|\(\(/work\)\|\(gpfs.*WORK\)/fordas/rosetta.*/.*/.lvimrc\)'
 
-" Command-T
-let g:CommandTMaxFiles=30000
+" Ctrl-p
+let g:ctrlp_map = '<Leader>t'
+nnoremap <silent> <Leader>b :CtrlPBuffer<CR>
+let g:ctrlp_root_markers = ['.ctrlp']
 
 " Alignment plugins
 if !hasmapto('<Plug>AM_tsq')	|map <unique> <Leader>as <Plug>AM_tsq|endif
