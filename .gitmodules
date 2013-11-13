@@ -83,3 +83,15 @@
 	path = bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
   ignore = untracked
+[submodule "bundle/vim-obsession"]
+	path = bundle/vim-obsession
+	url = git@github.com:tpope/vim-obsession.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "bundles/pyclewn"]
+	path = bundles/pyclewn
+	url = https://github.com/xieyu/pyclewn.git
+[submodule "bundle/pyclewn"]
+	path = bundle/pyclewn
+	url = https://github.com/xieyu/pyclewn.git

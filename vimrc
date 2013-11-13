@@ -119,6 +119,7 @@ let NERDTreeIgnore = ['\.pyc$']
 
 " Tagbar
 nnoremap <silent> <Leader>o :TagbarToggle<CR>
+nnoremap <silent> <Leader>O :TagbarTogglePause<CR>
 let g:tagbar_left=1
 
 " Gundo
@@ -140,31 +141,18 @@ let g:localvimrc_whitelist='\(/Volumes/fordas/rosetta.*/.lvimrc\)\|\(workspace/.
 let g:ctrlp_map = '<Leader>t'
 nnoremap <silent> <Leader>b :CtrlPBuffer<CR>
 let g:ctrlp_root_markers = ['.ctrlp']
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll|pyc)$',
+  \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
+  \ }
+let g:ctrlp_switch_buffer = 't'
+
 
 " Alignment plugins
 if !hasmapto('<Plug>AM_tsq')	|map <unique> <Leader>as <Plug>AM_tsq|endif
 
-" Surround mappings
-let g:surround_indent = 1
-imap ( <Plug>Isurround)
-imap { <Plug>Isurround}
-imap [ <Plug>Isurround]
-
-imap (<Space> <Plug>Isurround(
-imap {<Space> <Plug>Isurround{
-imap [<Space> <Plug>Isurround[
-
-imap (<CR> <Plug>ISurround(
-imap {<CR> <Plug>ISurround{
-imap [<CR> <Plug>ISurround[
-
-inoremap (<BS> (
-inoremap {<BS> {
-inoremap [<BS> [
-
-inoremap () ()
-inoremap {} {}
-inoremap [] []
+" delimitMate settings
 
 " Syntastic settings
 let g:syntastic_mode_map = { 'mode': 'passive', "active_filetypes": ["python"], "passive_filetypes": [] }
