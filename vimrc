@@ -135,7 +135,7 @@ nnoremap <silent> <Leader>e :botright cwindow<CR>
 
 " Localvimrc
 let g:localvimrc_sandbox = 0
-let g:localvimrc_whitelist='\(/Volumes/fordas/rosetta.*/.lvimrc\)\|\(workspace/.*/.lvimrc\)\|\(\(/work\)\|\(gpfs.*WORK\)/fordas/rosetta.*/.*/.lvimrc\)\|\(/scratch/USERS/fordas/.*/.lvimrc\)'
+let g:localvimrc_whitelist='\(/Volumes/fordas/rosetta.*/.lvimrc\)\|\(workspace/.*/.lvimrc\)\|\(\(/work\)\|\(gpfs.*WORK\)/fordas/rosetta.*/.*/.lvimrc\)\|\(/scratch/USERS/fordas/.*/.lvimrc\)\|\(/Volumes/scratch/.*/.lvimrc\)'
 
 " Ctrl-p
 let g:ctrlp_map = '<Leader>t'
