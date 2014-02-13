@@ -72,9 +72,11 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git
+  ignore = untracked
 [submodule "bundle/IndentTab"]
 	path = bundle/IndentTab
 	url = https://github.com/vim-scripts/IndentTab
+  ignore = untracked
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
@@ -87,14 +89,10 @@
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
   ignore = untracked
-[submodule "bundles/pyclewn"]
-	path = bundles/pyclewn
-	url = https://github.com/xieyu/pyclewn.git
-  ignore = untracked
 [submodule "bundle/pyclewn"]
 	path = bundle/pyclewn
 	url = https://github.com/xieyu/pyclewn.git
-  ignore = untracked
+  ignore = dirty
 [submodule "bundle/khuno"]
 	path = bundle/khuno
 	url = https://github.com/alfredodeza/khuno.vim.git
