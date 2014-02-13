@@ -94,3 +94,6 @@
 [submodule "bundle/khuno"]
 	path = bundle/khuno
 	url = https://github.com/alfredodeza/khuno.vim.git
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips
