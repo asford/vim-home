@@ -82,18 +82,24 @@
 [submodule "bundle/vim-obsession"]
 	path = bundle/vim-obsession
 	url = git@github.com:tpope/vim-obsession.git
+  ignore = untracked
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+  ignore = untracked
 [submodule "bundles/pyclewn"]
 	path = bundles/pyclewn
 	url = https://github.com/xieyu/pyclewn.git
+  ignore = untracked
 [submodule "bundle/pyclewn"]
 	path = bundle/pyclewn
 	url = https://github.com/xieyu/pyclewn.git
+  ignore = untracked
 [submodule "bundle/khuno"]
 	path = bundle/khuno
 	url = https://github.com/alfredodeza/khuno.vim.git
+  ignore = untracked
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips
+  ignore = untracked
