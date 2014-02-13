@@ -95,3 +95,6 @@
 [submodule "bundle/pyclewn"]
 	path = bundle/pyclewn
 	url = https://github.com/xieyu/pyclewn.git
+[submodule "bundle/khuno"]
+	path = bundle/khuno
+	url = https://github.com/alfredodeza/khuno.vim.git

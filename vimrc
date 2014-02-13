@@ -61,7 +61,11 @@ set showmode
 set showcmd
 set laststatus=2 "Always show status line
 let g:asynccommand_statusline_autohide = 1
-set statusline=%<%f\ %h%m%r%=%.45{asynccommand#statusline()}\ %{fugitive#statusline()}\ %-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ %h%m%r%=
+set statusline+=%.45{asynccommand#statusline()}\ 
+set statusline+=%{khuno#Status('Flake8')}\           " are there any errors? 
+set statusline+=%{fugitive#statusline()}\ 
+set statusline+=%-14.(%l,%c%V%)\ %P
 
 set linebreak "Smart line breaks
 set display+=lastline "Display partial last lines
@@ -130,6 +134,7 @@ nnoremap <silent> <Leader>p :AsyncTogglePending<CR>
 
 " Scratch 
 nnoremap <silent> <Leader>sr :ScratchToggle<CR>
+nnoremap <silent> <Leader>sf :Khuno show<CR>
 
 nnoremap <silent> <Leader>e :botright cwindow<CR>
 
@@ -155,12 +160,14 @@ if !hasmapto('<Plug>AM_tsq')	|map <unique> <Leader>as <Plug>AM_tsq|endif
 " delimitMate settings
 
 " Syntastic settings
-let g:syntastic_mode_map = { 'mode': 'passive', "active_filetypes": ["python"], "passive_filetypes": [] }
+let g:syntastic_mode_map = { 'mode': 'passive', "active_filetypes": [], "passive_filetypes": [] }
 let g:syntastic_enable_signs=0
 let g:syntastic_auto_loc_list=2
 let g:syntastic_enable_highlighting = 1
 let g:syntastic_python_checkers = ['pylint']
-let g:syntastic_python_pylint_args = ' -f parseable -r n -i y --rcfile=~/.vim/pylint.rc '
+let g:syntastic_python_pylint_post_args = ' --rcfile=~/.vim/pylint.rc '
+let g:syntastic_javascript_checkers = ['jsl']
+"let g:syntastic_debug = 1
 
 " Mark display settings
 let g:SignatureSignTextHL = "SignMark"
