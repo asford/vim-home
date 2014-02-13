@@ -23,5 +23,6 @@ vnoremap <buffer> k gk
 setlocal display=lastline
 
 " Adding make and view commands
+map <buffer> <Leader>p :silent !open -a 'Google Chrome' %<cr>
 map <buffer> <Leader>vp :!open %<.pdf<cr>
 map <buffer> <Leader>mp :!multimarkdown -t latex -b % && latexmk -pv %<.tex<cr>
