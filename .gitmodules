@@ -10,10 +10,6 @@
 	path = bundle/nerdtree
 	url = http://github.com/scrooloose/nerdtree
   ignore = untracked
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = http://github.com/msanders/snipmate.vim
-  ignore = untracked
 [submodule "bundle/pandoc"]
 	path = bundle/pandoc
 	url = http://github.com/vim-pandoc/vim-pandoc.git
