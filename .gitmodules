@@ -36,7 +36,7 @@
   ignore = untracked
 [submodule "bundle/AsyncCommand"]
 	path = bundle/AsyncCommand
-	url = git://github.com/pydave/AsyncCommand.git
+	url = git://github.com/asford/AsyncCommand.git
   ignore = untracked
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
