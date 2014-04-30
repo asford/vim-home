@@ -181,3 +181,6 @@ autocmd BufReadPost fugitive://* set bufhidden=delete
 
 " Markdown support
 let g:markdown_fenced_languages = ["python", "cpp"]
+
+" Ultisnips
+let g:ultisnips_python_style = "google"
