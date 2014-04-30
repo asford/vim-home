@@ -1,1 +1,1 @@
-let&l:equalprg='%!tidy -xml -q -w 240 -indent'
+let&l:equalprg='tidy -xml -q -w 360 -indent'
