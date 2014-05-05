@@ -145,13 +145,19 @@ let g:localvimrc_whitelist='\(/Volumes/fordas/rosetta.*/.lvimrc\)\|\(workspace/.
 " Ctrl-p
 let g:ctrlp_map = '<Leader>t'
 nnoremap <silent> <Leader>b :CtrlPBuffer<CR>
-let g:ctrlp_root_markers = ['.ctrlp']
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll|pyc)$',
   \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
   \ }
 let g:ctrlp_switch_buffer = 't'
+let g:ctrlp_user_command = {
+  \ 'types': {
+    \ 1: ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others'],
+    \ 2: ['.hg', 'hg --cwd %s locate -I .'],
+  \ },
+  \ 'fallback': 'find %s -type f'
+\ }
 
 
 " Alignment plugins
