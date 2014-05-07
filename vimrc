@@ -190,3 +190,15 @@ let g:markdown_fenced_languages = ["python", "cpp"]
 
 " Ultisnips
 let g:ultisnips_python_style = "google"
+
+" Jedi settings
+let g:jedi#popup_on_dot = 0
+let g:SuperTabDefaultCompletionType = "context"
+
+" Disable python mode
+let g:pymode_options = 0
+let g:pymode_doc = 0
+let g:pymode_run = 0
+let g:pymode_breakpoint = 0
+let g:pymode_lint = 0
+let g:pymode_rope = 0
