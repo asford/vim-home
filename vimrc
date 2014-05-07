@@ -134,7 +134,6 @@ nnoremap <silent> <Leader>p :AsyncTogglePending<CR>
 
 " Scratch 
 nnoremap <silent> <Leader>sr :ScratchToggle<CR>
-nnoremap <silent> <Leader>sf :Khuno show<CR>
 
 nnoremap <silent> <Leader>e :botright cwindow<CR>
 
@@ -190,6 +189,11 @@ let g:markdown_fenced_languages = ["python", "cpp"]
 
 " Ultisnips
 let g:ultisnips_python_style = "google"
+
+" Khuno settings
+nnoremap <silent> <Leader>sf :Khuno show<CR>
+let g:khuno_flake_cmd = "pylama"
+let g:khuno_flake_options = "-o ". $HOME."/.vim/pylama.ini"
 
 " Jedi settings
 let g:jedi#popup_on_dot = 0
