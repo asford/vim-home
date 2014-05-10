@@ -121,6 +121,10 @@ let NERDTreeDirArrows=1
 let NERDTreeChDirMode=2
 let NERDTreeIgnore = ['\.pyc$']
 
+:let g:NERDTreeMapOpenSplit = '<C-s>'
+:let g:NERDTreeMapOpenVSplit = '<C-v>'
+:let g:NERDTreeMapOpenInTab = '<C-t>'
+
 " Tagbar
 nnoremap <silent> <Leader>o :TagbarToggle<CR>
 nnoremap <silent> <Leader>O :TagbarTogglePause<CR>
@@ -183,6 +187,8 @@ let g:tex_flavor = "latex"
 " Vim fugitive
 " Auto unload fugitive buffers when hidden
 autocmd BufReadPost fugitive://* set bufhidden=delete
+nnoremap <silent> <Leader>gs :Gstatus <cr>
+nnoremap <silent> <Leader>gd :Gdiff <cr>
 
 " Markdown support
 let g:markdown_fenced_languages = ["python", "cpp"]
@@ -198,6 +204,15 @@ let g:khuno_flake_options = "-o ". $HOME."/.vim/pylama.ini"
 " Jedi settings
 let g:jedi#popup_on_dot = 0
 let g:SuperTabDefaultCompletionType = "context"
+let g:jedi#completions_command = ""
+let g:jedi#goto_assignments_command = ""
+let g:jedi#goto_definitions_command = ""
+let g:jedi#documentation_command = "<leader>k"
+let g:jedi#rename_command = ""
+let g:jedi#usages_command = ""
+
+
+
 
 " Disable python mode
 let g:pymode_options = 0
