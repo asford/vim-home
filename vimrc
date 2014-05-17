@@ -164,9 +164,8 @@ let g:ctrlp_user_command = {
 
 
 " Alignment plugins
-if !hasmapto('<Plug>AM_tsq')	|map <unique> <Leader>as <Plug>AM_tsq|endif
-
-" delimitMate settings
+vmap <Leader>a <Plug>(EasyAlign)
+nmap <Leader>a <Plug>(EasyAlign)
 
 " Syntastic settings
 let g:syntastic_mode_map = { 'mode': 'passive', "active_filetypes": [], "passive_filetypes": [] }
