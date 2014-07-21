@@ -193,6 +193,9 @@ let g:markdown_fenced_languages = ["python", "cpp"]
 
 " Ultisnips
 let g:ultisnips_python_style = "google"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Khuno settings
 nnoremap <silent> <Leader>sf :Khuno show<CR>
