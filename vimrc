@@ -7,8 +7,7 @@ if !has('clientserver')
   call add(g:pathogen_disabled, 'AsyncCommand')
 endif
 
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
 
 " Language options
 syntax on
@@ -202,6 +201,7 @@ let g:khuno_flake_options = "-o ". $HOME."/.vim/pylama.ini"
 
 " Jedi settings
 let g:jedi#popup_on_dot = 0
+let g:jedi#show_call_signatures = 0
 let g:SuperTabDefaultCompletionType = "context"
 let g:jedi#completions_command = ""
 let g:jedi#goto_assignments_command = ""
