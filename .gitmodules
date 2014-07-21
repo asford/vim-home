@@ -109,3 +109,9 @@
 [submodule "bundle/vim-easy-align"]
 	path = bundle/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "bundle/ExtractMatches"]
+	path = bundle/ExtractMatches
+	url = https://github.com/vim-scripts/ExtractMatches.git
+[submodule "bundle/coveragepy"]
+	path = bundle/coveragepy
+	url = https://github.com/alfredodeza/coveragepy.vim
