@@ -115,3 +115,6 @@
 [submodule "bundle/coveragepy"]
 	path = bundle/coveragepy
 	url = https://github.com/alfredodeza/coveragepy.vim
+[submodule "bundle/diffchanges"]
+	path = bundle/diffchanges
+	url = https://github.com/jmcantrell/vim-diffchanges.git
