@@ -2,9 +2,16 @@ set nocompatible
 
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 
+let g:pathogen_disabled = []
+
 " Setup pathogen bundles
 if !has('clientserver')
   call add(g:pathogen_disabled, 'AsyncCommand')
+endif
+
+if !has('gui_running')
+  call add(g:pathogen_disabled, 'khuno')
+  call add(g:pathogen_disabled, 'jedi-vim')
 endif
 
 call pathogen#infect()
@@ -203,18 +210,15 @@ let g:khuno_flake_cmd = "pylama"
 let g:khuno_flake_options = "-o ". $HOME."/.vim/pylama.ini"
 
 " Jedi settings
+let g:SuperTabDefaultCompletionType = "context"
 let g:jedi#popup_on_dot = 0
 let g:jedi#show_call_signatures = 0
-let g:SuperTabDefaultCompletionType = "context"
 let g:jedi#completions_command = ""
 let g:jedi#goto_assignments_command = ""
 let g:jedi#goto_definitions_command = ""
 let g:jedi#documentation_command = "<leader>k"
 let g:jedi#rename_command = ""
 let g:jedi#usages_command = ""
-
-
-
 
 " Disable python mode
 let g:pymode_options = 0
