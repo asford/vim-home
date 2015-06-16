@@ -70,7 +70,6 @@ let g:asynccommand_statusline_autohide = 1
 set statusline=%<%f\ %h%m%r%=
 set statusline+=%.45{asynccommand#statusline()}\ 
 set statusline+=%{khuno#Status('Flake8')}\           " are there any errors? 
-set statusline+=%{fugitive#statusline()}\ 
 set statusline+=%-14.(%l,%c%V%)\ %P
 
 set linebreak "Smart line breaks
@@ -149,7 +148,7 @@ nnoremap <silent> <Leader>e :botright cwindow<CR>
 
 " Localvimrc
 let g:localvimrc_sandbox = 0
-let g:localvimrc_whitelist='\(/Volumes/dig_scratch/.*rosetta.*/.lvimrc\)\|\(/Volumes/fordas/rosetta.*/.lvimrc\)\|\(workspace/.*/.lvimrc\)\|\(\(/work\)\|\(gpfs.*WORK\)/fordas/rosetta.*/.*/.lvimrc\)\|\(/scratch/USERS/fordas/.*/.lvimrc\)\|\(/Volumes/scratch/.*/.lvimrc\)'
+let g:localvimrc_whitelist='\(/Volumes/dig_scratch/.*development.*/.lvimrc\)\|\(/Volumes/fordas/rosetta.*/.lvimrc\)\|\(workspace/.*/.lvimrc\)\|\(\(/work\)\|\(gpfs.*WORK\)/fordas/rosetta.*/.*/.lvimrc\)\|\(/scratch/USERS/fordas/.*/.lvimrc\)\|\(/Volumes/scratch/.*/.lvimrc\)'
 
 " Ctrl-p
 let g:ctrlp_map = '<Leader>t'
