@@ -1,15 +1,13 @@
-" n: keep inner indent for list items.
-setlocal formatoptions=n
-" will detect numbers, letters, *, +, and - as list headers
-" TODO: add support for roman numerals
-setlocal formatlistpat=^\\s*\\([*+-]\\\|\\((*\\d\\+[.)]\\+\\)\\\|\\((*\\l[.)]\\+\\)\\)\\s\\+
-
 set spell
 
 " soft wrapping
 setlocal formatoptions=1
 setlocal linebreak
 setlocal breakat-=*
+setlocal wrap
+
+setlocal textwidth=0
+setlocal wrapmargin=0
 
 " Remappings that make j and k behave properly with
 " soft wrapping.
